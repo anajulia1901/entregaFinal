@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+BACKEND/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+BACKEND/.env
+
+# Build output
+build/
+dist/
+BACKEND/build/
+BACKEND/dist/
+
+# Dependency directories
+jspm_packages/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore any other files or folders specific to your project
