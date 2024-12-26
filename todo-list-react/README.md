@@ -73,6 +73,41 @@ todo-list-react/
 └── README.md
 ```
 
+## 💡️ Backend
+
+La aplicación utiliza un backend construido con Express y MongoDB a través de Mongoose. A continuación se describen los endpoints disponibles y su funcionalidad.
+
+### Endpoints
+
+- **GET /todos**: Obtiene todas las tareas.
+- **GET /todos/:id**: Obtiene una tarea específica por su ID.
+- **POST /todos**: Crea una nueva tarea. Se espera un cuerpo de solicitud con los siguientes campos:
+  - `title`: Título de la tarea (requerido).
+  - `completed`: Estado de la tarea (booleano, opcional).
+  - `description`: Descripción de la tarea (opcional).
+  - `creator`: Creador de la tarea (opcional).
+  
+- **PUT /todos/:id**: Actualiza una tarea existente por su ID. Se puede enviar un cuerpo de solicitud con los campos que se desean actualizar.
+  
+- **DELETE /todos/:id**: Elimina una tarea específica por su ID.
+
+### Estructura del Proyecto Backend
+
+```
+todo-api/
+├── controllers/
+│   └── todoController.js  // Controlador que maneja la lógica de las tareas
+├── models/
+│   └── todoModel.js       // Modelo de datos para las tareas
+├── routes/
+│   └── todoRoutes.js      // Rutas para manejar las solicitudes de tareas
+├── app.js                 // Archivo principal de la aplicación
+├── db.js                  // Conexión a la base de datos
+└── package.json           // Dependencias y scripts del proyecto
+```
+
+Esta estructura permite una fácil escalabilidad y mantenimiento del código, separando la lógica de negocio, los modelos de datos y las rutas de la API.
+
 ## 💡 Uso
 
 - Para añadir una tarea: Completa el formulario y presiona "Add"
