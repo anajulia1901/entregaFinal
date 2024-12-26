@@ -113,5 +113,6 @@ Esta estructura permite una fácil escalabilidad y mantenimiento del código, se
 - Para añadir una tarea: Completa el formulario y presiona "Add"
 - Para marcar como completada: Haz click en el checkbox
 - Para eliminar: Presiona el botón "Delete"
-- Las tareas persisten después de recargar la página
+- Las tareas persisten después de recargar la página.
+
 
